@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PDE">
+      <UniqueIdentifier>{19f28c2a-db12-4f5a-ab55-bb20aa99da5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDETest">
+      <UniqueIdentifier>{dc7c55af-71de-4248-ba1c-d21aace2461a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDETest\Core">
+      <UniqueIdentifier>{db7f54fa-e0a7-40d0-ac16-63bc99dc97c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Compiler">
+      <UniqueIdentifier>{858814c4-8cec-43db-9da0-5e9a46135505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Debug">
+      <UniqueIdentifier>{4a0233de-cc9a-4be6-ba06-803ffa502c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides">
+      <UniqueIdentifier>{cd8e2356-e12c-4278-9d2c-f914f9963faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Hardware">
+      <UniqueIdentifier>{225d42f5-51db-4341-aef0-e6b1740592ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Image">
+      <UniqueIdentifier>{f9a15679-9928-401c-b75a-54735950ab1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Maths">
+      <UniqueIdentifier>{eb39e666-2455-4489-b14d-2325061e7e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Platform">
+      <UniqueIdentifier>{e197c8fd-6f0b-4d42-bd7e-d178d5020650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Time">
+      <UniqueIdentifier>{8261dd04-b3ea-456a-8e97-6895893d749c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Code\Core\EntryPoint.cpp">
+      <Filter>PDETest\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Debug\AssertAndroid.cpp">
+      <Filter>PDE\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Debug\AssertWin.cpp">
+      <Filter>PDE\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Debug\TraceAndroid.cpp">
+      <Filter>PDE\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Debug\TraceStdC.cpp">
+      <Filter>PDE\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Debug\TraceWin.cpp">
+      <Filter>PDE\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Image\Image.cpp">
+      <Filter>PDE\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp">
+      <Filter>PDE\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Image\Image_Save.cpp">
+      <Filter>PDE\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Maths\Maths.cpp">
+      <Filter>PDE\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Maths\Vector.cpp">
+      <Filter>PDE\Maths</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\PDE\Compiler\Compiler.h">
+      <Filter>PDE\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Debug\Assert.h">
+      <Filter>PDE\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Debug\Breakpoint.h">
+      <Filter>PDE\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Debug\Trace.h">
+      <Filter>PDE\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Hardware\CPU.h">
+      <Filter>PDE\Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Image\Image.h">
+      <Filter>PDE\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Maths\DPVector.h">
+      <Filter>PDE\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Maths\Maths.h">
+      <Filter>PDE\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Maths\MathsOperator.h">
+      <Filter>PDE\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Maths\Matrix.h">
+      <Filter>PDE\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Maths\Vector.h">
+      <Filter>PDE\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Platform\Platform.h">
+      <Filter>PDE\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Time\J2000.h">
+      <Filter>PDE\Time</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
