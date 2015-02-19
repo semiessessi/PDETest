@@ -202,6 +202,7 @@
     <ClCompile Include="..\..\PDE\Maths\Vector.cpp" />
     <ClCompile Include="..\Code\Core\EntryPoint.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_JupiterPosition.cpp" />
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_SaturnPosition.cpp" />
     <ClCompile Include="..\Code\Test\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +226,7 @@
     <ClInclude Include="..\..\PDE\Platform\Platform.h" />
     <ClInclude Include="..\..\PDE\Time\J2000.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_SaturnPosition.h" />
     <ClInclude Include="..\Code\Test\Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
