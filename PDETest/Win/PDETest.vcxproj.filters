@@ -96,6 +96,9 @@
     <ClCompile Include="..\Code\Test\Ephemerides\Test_SaturnPosition.cpp">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.cpp">
+      <Filter>PDE\Ephemerides\Jupiter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PDE\Compiler\Compiler.h">
@@ -162,6 +165,15 @@
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
     <ClInclude Include="..\Code\Test\Ephemerides\Test_SaturnPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.h">
+      <Filter>PDE\Ephemerides\Jupiter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\VSOP87Orbit.h">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_Position.h">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
   </ItemGroup>

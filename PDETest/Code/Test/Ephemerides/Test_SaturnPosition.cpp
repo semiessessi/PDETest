@@ -1,8 +1,10 @@
 #include "Test_SaturnPosition.h"
 
+#include "Test_Position.h"
+
 #include "Ephemerides/Saturn/SaturnSchlyterModel.h"
 
-bool Test_SaturnPosition::Run( )
+bool Test_SaturnPosition::Run()
 {
 	// SE: test the Schlyter model a bit, make sure it is correct against
 	// a whole bunch of test values...
@@ -31,29 +33,7 @@ bool Test_SaturnPosition::Run( )
 	};
 
 	SaturnSchlyterOrbitalEphemeris xSchlyterModel;
-	const int iTestCaseCount = sizeof( kaxTestValues ) / sizeof( kaxTestValues[ 0 ] );
-	const double dApproximateMagnitude = 9.5;
-	double dError = 0;
-	for( int i = 0; i < iTestCaseCount; ++i )
-	{
-		const EphemerisVector4 xTestPosition = xSchlyterModel.CalculatePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) );
-		const double dDistance = ( xTestPosition.xyz()
-			- EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz() )
-				.Magnitude();
-
-		dError += dDistance;
-		if( dDistance > 0.1 )
-		{
-			return TEST_FAIL( "Error in position greater than 0.1 AU!" );
-		}
-
-		if( dDistance > 0.01 )
-		{
-			TEST_WARNING( "Error in position is greater than 0.01 AU! - was %f", dDistance );
-		}
-	}
-	const double dAverageError = dError / static_cast< double >( iTestCaseCount );
-	printf( "Error in Saturn Schlyter model across test cases was on average %.2f%% (%.4f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError );
+	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn Schlyter", 9.5 );
 
 	return true;
 }

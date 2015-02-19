@@ -194,6 +194,7 @@
     </ClCompile>
     <ClCompile Include="..\..\PDE\Debug\TraceWin.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp" />
@@ -211,11 +212,13 @@
     <ClInclude Include="..\..\PDE\Debug\Breakpoint.h" />
     <ClInclude Include="..\..\PDE\Debug\Trace.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\KeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\OrbitalEphemeris.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PeturbedKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PrecessingKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\VSOP87Orbit.h" />
     <ClInclude Include="..\..\PDE\Hardware\CPU.h" />
     <ClInclude Include="..\..\PDE\Image\Image.h" />
     <ClInclude Include="..\..\PDE\Maths\DPVector.h" />
@@ -226,6 +229,7 @@
     <ClInclude Include="..\..\PDE\Platform\Platform.h" />
     <ClInclude Include="..\..\PDE\Time\J2000.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_Position.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_SaturnPosition.h" />
     <ClInclude Include="..\Code\Test\Test.h" />
   </ItemGroup>

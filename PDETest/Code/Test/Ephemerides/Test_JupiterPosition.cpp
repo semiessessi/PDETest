@@ -1,6 +1,9 @@
 #include "Test_JupiterPosition.h"
 
+#include "Test_Position.h"
+
 #include "Ephemerides/Jupiter/JupiterSchlyterModel.h"
+#include "Ephemerides/Jupiter/JupiterVSOP87Model.h"
 
 bool Test_JupiterPosition::Run()
 {
@@ -30,30 +33,7 @@ bool Test_JupiterPosition::Run()
 		{ 1.050303519555381E+00, 4.966542119788040E+00, -4.409887883300617E-02, 2460676.500000000 },
 	};
 
-	JupiterSchlyterOrbitalEphemeris xSchlyterModel;
-	const int iTestCaseCount = sizeof( kaxTestValues ) / sizeof( kaxTestValues[ 0 ] );
-	const double dApproximateMagnitude = 5.4;
-	double dError = 0;
-	for( int i = 0; i < iTestCaseCount; ++i )
-	{
-		const EphemerisVector4 xTestPosition = xSchlyterModel.CalculatePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) );
-		const double dDistance = ( xTestPosition.xyz()
-			- EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz() )
-				.Magnitude();
-
-		dError += dDistance;
-		if( dDistance > 0.1 )
-		{
-			return TEST_FAIL( "Error in position greater than 0.1 AU!" );
-		}
-
-		if( dDistance > 0.01 )
-		{
-			TEST_WARNING( "Error in position is greater than 0.01 AU! - was %f", dDistance );
-		}
-	}
-	const double dAverageError = dError / static_cast< double >( iTestCaseCount );
-	printf( "Error in Jupiter Schlyter model across test cases was on average %.2f%% (%.4f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError );
-
+	POSITION_TEST( JupiterSchlyterOrbitalEphemeris, "Jupiter Schlyter", 5.4 );
+	POSITION_TEST( JupiterVSOP87OrbitalEphemeris, "Jupiter VSOP87", 5.4 );
 	return true;
 }
