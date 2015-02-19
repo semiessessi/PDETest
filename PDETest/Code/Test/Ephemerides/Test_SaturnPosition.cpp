@@ -54,7 +54,7 @@ bool Test_SaturnPosition::Run( )
 		}
 	}
 	const double dAverageError = dError / static_cast< double >( iTestCaseCount );
-	printf( "Error in Saturn Schlyter model across test cases was on average %.2f%% (%.4f AU)", 100.0  * dAverageError / dApproximateMagnitude, dAverageError );
+	printf( "Error in Saturn Schlyter model across test cases was on average %.2f%% (%.4f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError );
 
 	return true;
 }
