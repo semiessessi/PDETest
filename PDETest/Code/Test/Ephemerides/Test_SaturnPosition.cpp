@@ -17,7 +17,6 @@ bool Test_SaturnPosition::Run( )
 
 	} kaxTestValues[] =
 	{
-		
 		{ -2.426101134710925E+00, 8.696599760908482E+00, -5.570983877091697E-02, 2442413.500000000 },
 		{ -9.299613115111459E+00, 1.403447594015825E+00, 3.450248763214140E-01, 2444239.500000000 },
 		{-6.249527954209951E+00, -7.672358424911746E+00, 3.822060348864328E-01, 2446066.500000000 },
@@ -33,14 +32,14 @@ bool Test_SaturnPosition::Run( )
 
 	SaturnSchlyterOrbitalEphemeris xSchlyterModel;
 	const int iTestCaseCount = sizeof( kaxTestValues ) / sizeof( kaxTestValues[ 0 ] );
-	const double dApproximateMagnitude = 5.4;
+	const double dApproximateMagnitude = 9.5;
 	double dError = 0;
 	for( int i = 0; i < iTestCaseCount; ++i )
 	{
 		const EphemerisVector4 xTestPosition = xSchlyterModel.CalculatePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) );
-		const double dDistance = ( xTestPosition.xyz( )
-			- EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz( ) )
-			.Magnitude( );
+		const double dDistance = ( xTestPosition.xyz()
+			- EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz() )
+				.Magnitude();
 
 		dError += dDistance;
 		if( dDistance > 0.1 )
