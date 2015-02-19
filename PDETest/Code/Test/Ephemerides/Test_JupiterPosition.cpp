@@ -52,8 +52,8 @@ bool Test_JupiterPosition::Run()
 			TEST_WARNING( "Error in position is greater than 0.01 AU! - was %f", dDistance );
 		}
 	}
-
-	printf( "Error in Jupiter Schlyter model across test cases was %.2f%%", dError * 100.0 / ( static_cast< double >( iTestCaseCount ) * dApproximateMagnitude ) );
+	const double dAverageError = dError / static_cast< double >( iTestCaseCount );
+	printf( "Error in Jupiter Schlyter model across test cases was on average %.2f%% (%.4f AU)", 100.0  * dAverageError / dApproximateMagnitude, dAverageError );
 
 	return true;
 }
