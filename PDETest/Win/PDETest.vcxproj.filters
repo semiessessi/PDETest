@@ -34,6 +34,18 @@
     <Filter Include="PDE\Time">
       <UniqueIdentifier>{8261dd04-b3ea-456a-8e97-6895893d749c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PDE\Ephemerides\Jupiter">
+      <UniqueIdentifier>{370c4a94-71a7-4171-9729-9a88005c9987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Saturn">
+      <UniqueIdentifier>{7632db82-e83a-49e5-a65a-d6950f5f80fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDETest\Test">
+      <UniqueIdentifier>{b8d63dce-2d5d-4778-acea-63d0ae3502fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDETest\Test\Ephemerides">
+      <UniqueIdentifier>{756106ca-f3a0-4076-8b2f-0faaae436018}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\Core\EntryPoint.cpp">
@@ -68,6 +80,18 @@
     </ClCompile>
     <ClCompile Include="..\..\PDE\Maths\Vector.cpp">
       <Filter>PDE\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Jupiter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Saturn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Test.cpp">
+      <Filter>PDETest\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_JupiterPosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +133,30 @@
     </ClInclude>
     <ClInclude Include="..\..\PDE\Time\J2000.h">
       <Filter>PDE\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\KeplerOrbit.h">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\OrbitalEphemeris.h">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\PeturbedKeplerOrbit.h">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Jupiter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Saturn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\PrecessingKeplerOrbit.h">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Test.h">
+      <Filter>PDETest\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
