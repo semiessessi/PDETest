@@ -138,6 +138,12 @@
     <ClCompile Include="..\Code\Test\Ephemerides\Test_UranusPosition.cpp">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.cpp">
+      <Filter>PDE\Ephemerides\Saturn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_NeptunePosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PDE\Compiler\Compiler.h">
@@ -234,6 +240,12 @@
       <Filter>PDE\Ephemerides\Mercury</Filter>
     </ClInclude>
     <ClInclude Include="..\Code\Test\Ephemerides\Test_UranusPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.h">
+      <Filter>PDE\Ephemerides\Saturn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_NeptunePosition.h">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
   </ItemGroup>

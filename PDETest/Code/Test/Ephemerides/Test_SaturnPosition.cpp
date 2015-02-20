@@ -3,6 +3,7 @@
 #include "Test_Position.h"
 
 #include "Ephemerides/Saturn/SaturnSchlyterModel.h"
+#include "Ephemerides/Saturn/SaturnVSOP87Model.h"
 
 bool Test_SaturnPosition::Run()
 {
@@ -34,6 +35,7 @@ bool Test_SaturnPosition::Run()
 
 	SaturnSchlyterOrbitalEphemeris xSchlyterModel;
 	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn Schlyter", 9.5 );
+	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn VSOP87", 9.5 );
 
 	return true;
 }
