@@ -193,9 +193,15 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\PDE\Debug\TraceWin.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_Save.cpp" />
@@ -204,6 +210,7 @@
     <ClCompile Include="..\Code\Core\EntryPoint.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_JupiterPosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_SaturnPosition.cpp" />
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_UranusPosition.cpp" />
     <ClCompile Include="..\Code\Test\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -211,13 +218,19 @@
     <ClInclude Include="..\..\PDE\Debug\Assert.h" />
     <ClInclude Include="..\..\PDE\Debug\Breakpoint.h" />
     <ClInclude Include="..\..\PDE\Debug\Trace.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\KeplerOrbit.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\OrbitalEphemeris.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PeturbedKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PrecessingKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\VSOP87Orbit.h" />
     <ClInclude Include="..\..\PDE\Hardware\CPU.h" />
     <ClInclude Include="..\..\PDE\Image\Image.h" />
@@ -231,6 +244,7 @@
     <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_Position.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_SaturnPosition.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_UranusPosition.h" />
     <ClInclude Include="..\Code\Test\Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

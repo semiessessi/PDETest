@@ -46,6 +46,24 @@
     <Filter Include="PDETest\Test\Ephemerides">
       <UniqueIdentifier>{756106ca-f3a0-4076-8b2f-0faaae436018}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PDE\Ephemerides\Uranus">
+      <UniqueIdentifier>{c2e870d7-4d2f-4ebc-8ac8-20106ae72045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Neptune">
+      <UniqueIdentifier>{ac6677cc-c1a3-4809-8c37-bdc652cce9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Earth">
+      <UniqueIdentifier>{c6648b13-31a5-4e59-92f6-420f711de0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Mars">
+      <UniqueIdentifier>{d57d3ab1-6d16-4bb9-95cd-9ac1c49f40cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Mercury">
+      <UniqueIdentifier>{b44ef408-86d5-45f0-b482-ec96105455b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE\Ephemerides\Venus">
+      <UniqueIdentifier>{b678d5ce-8527-4918-bb20-ffba4a2296c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\Core\EntryPoint.cpp">
@@ -98,6 +116,27 @@
     </ClCompile>
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.cpp">
       <Filter>PDE\Ephemerides\Jupiter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Neptune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Uranus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Venus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Mars</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Earth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.cpp">
+      <Filter>PDE\Ephemerides\Mercury</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_UranusPosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +213,27 @@
       <Filter>PDE\Ephemerides</Filter>
     </ClInclude>
     <ClInclude Include="..\Code\Test\Ephemerides\Test_Position.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Neptune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Uranus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Venus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Mars</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.h">
+      <Filter>PDE\Ephemerides\Earth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.h">
+      <Filter>PDE\Ephemerides\Mercury</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_UranusPosition.h">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
   </ItemGroup>
