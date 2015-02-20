@@ -202,6 +202,7 @@
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp" />
@@ -233,6 +234,7 @@
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\VSOP87Orbit.h" />
     <ClInclude Include="..\..\PDE\Hardware\CPU.h" />

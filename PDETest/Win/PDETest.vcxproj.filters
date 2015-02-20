@@ -144,6 +144,9 @@
     <ClCompile Include="..\Code\Test\Ephemerides\Test_NeptunePosition.cpp">
       <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.cpp">
+      <Filter>PDE\Ephemerides\Uranus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PDE\Compiler\Compiler.h">
@@ -247,6 +250,9 @@
     </ClInclude>
     <ClInclude Include="..\Code\Test\Ephemerides\Test_NeptunePosition.h">
       <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.h">
+      <Filter>PDE\Ephemerides\Uranus</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

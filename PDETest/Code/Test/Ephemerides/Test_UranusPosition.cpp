@@ -3,6 +3,7 @@
 #include "Test_Position.h"
 
 #include "Ephemerides/Uranus/UranusSchlyterModel.h"
+#include "Ephemerides/Uranus/UranusVSOP87Model.h"
 
 bool Test_UranusPosition::Run()
 {
@@ -38,6 +39,7 @@ bool Test_UranusPosition::Run()
 
     UranusSchlyterOrbitalEphemeris xSchlyterModel;
     POSITION_TEST( UranusSchlyterOrbitalEphemeris, "Uranus Schlyter", 19.0 );
+	POSITION_TEST( UranusVSOP87OrbitalEphemeris, "Uranus VSOP87", 19.0 );
 
     return true;
 }

@@ -35,7 +35,7 @@ bool Test_SaturnPosition::Run()
 
 	SaturnSchlyterOrbitalEphemeris xSchlyterModel;
 	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn Schlyter", 9.5 );
-	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn VSOP87", 9.5 );
+	POSITION_TEST( SaturnVSOP87OrbitalEphemeris, "Saturn VSOP87", 9.5 );
 
 	return true;
 }
