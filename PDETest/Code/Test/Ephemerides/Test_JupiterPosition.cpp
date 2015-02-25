@@ -35,6 +35,7 @@ bool Test_JupiterPosition::Run()
 
 	POSITION_TEST( JupiterSchlyterOrbitalEphemeris, "Jupiter Schlyter", 5.4 );
 	POSITION_TEST( JupiterVSOP87DOrbitalEphemeris, "Jupiter VSOP87D (truncated)", 5.4 );
+    POSITION_TEST( JupiterVSOP87EOrbitalEphemeris, "Jupiter VSOP87E", 5.4 );
 
 	return true;
 }

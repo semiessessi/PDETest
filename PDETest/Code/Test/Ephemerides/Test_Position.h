@@ -7,6 +7,8 @@
 	    const int iTestCaseCount = sizeof( kaxTestValues ) / sizeof( kaxTestValues[ 0 ] ); \
 	    const double dApproximateMagnitude = ApproxMag; \
 	    double dError = 0; \
+        double dMaxError = -1e26; \
+        double dMinError = 1e26; \
         for( int i = 0; i < iTestCaseCount; ++i ) \
 	    { \
 			const EphemerisVector4 xTestPosition = xModel.CalculatePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) ); \
@@ -14,6 +16,8 @@
 		    - EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz() ) \
 				.Magnitude(); \
 		    \
+            dMaxError = ( dMaxError > dDistance ) ? dMaxError : dDistance; \
+            dMinError = ( dMinError < dDistance ) ? dMinError : dDistance; \
 		    dError += dDistance; \
 			if( dDistance >( 0.5 * dApproximateMagnitude ) ) \
 			{ \
@@ -29,7 +33,16 @@
 		    } \
 	    } \
 	    const double dAverageError = dError / static_cast< double >( iTestCaseCount ); \
-	    printf( "Average error in " Name " model = %.2f%% (%.6f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError ); \
+        printf( "\r\n" ); \
+        printf( "\r\n" ); \
+        printf( "-----------------------------------------------------------------------------\r\n" ); \
+	    printf( "Average error in " Name " model = %.6f%%\r\n", 100.0  * dAverageError / dApproximateMagnitude ); \
+        printf( "\r\n" ); \
+        printf( "Min = %.10f%% (%.10fAU)\r\n", 100.0  * dMinError / dApproximateMagnitude, dMinError ); \
+        printf( "Max = %.10f%% (%.10fAU)\r\n", 100.0  * dMaxError / dApproximateMagnitude, dMaxError ); \
+        printf( "-----------------------------------------------------------------------------\r\n" ); \
+        printf( "\r\n" ); \
+        printf( "\r\n" ); \
 	}
 
 #endif
