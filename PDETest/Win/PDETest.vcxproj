@@ -201,18 +201,23 @@
     <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Sun\SunVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\VSOP87Orbit.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_Save.cpp" />
     <ClCompile Include="..\..\PDE\Maths\Maths.cpp" />
     <ClCompile Include="..\..\PDE\Maths\Vector.cpp" />
     <ClCompile Include="..\Code\Core\EntryPoint.cpp" />
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_EarthPosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_JupiterPosition.cpp" />
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_MercuryPosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_NeptunePosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_SaturnPosition.cpp" />
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_SunPosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_UranusPosition.cpp" />
     <ClCompile Include="..\Code\Test\Test.cpp" />
   </ItemGroup>
@@ -233,6 +238,7 @@
     <ClInclude Include="..\..\PDE\Ephemerides\PrecessingKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Sun\SunVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Venus\VenusSchlyterModel.h" />
@@ -246,10 +252,13 @@
     <ClInclude Include="..\..\PDE\Maths\Vector.h" />
     <ClInclude Include="..\..\PDE\Platform\Platform.h" />
     <ClInclude Include="..\..\PDE\Time\J2000.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_EarthPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_MercuryPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_NeptunePosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_Position.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_SaturnPosition.h" />
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_SunPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_UranusPosition.h" />
     <ClInclude Include="..\Code\Test\Test.h" />
   </ItemGroup>

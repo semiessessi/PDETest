@@ -37,9 +37,8 @@ bool Test_UranusPosition::Run()
         { -2.653645431899764E+00, 1.869683064535701E+01, 1.037628602742831E-01, 2464328.500000000 },
     };
 
-    UranusSchlyterOrbitalEphemeris xSchlyterModel;
     POSITION_TEST( UranusSchlyterOrbitalEphemeris, "Uranus Schlyter", 19.0 );
-	POSITION_TEST( UranusVSOP87OrbitalEphemeris, "Uranus VSOP87", 19.0 );
+	POSITION_TEST( UranusVSOP87DOrbitalEphemeris, "Uranus VSOP87D (truncated)", 19.0 );
 
     return true;
 }

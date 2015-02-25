@@ -36,7 +36,6 @@ bool Test_NeptunePosition::Run()
 		{ 2.785142896618660E+01, 1.065409369795068E+01, -8.612688568520366E-01, 2464328.500000000 },
 	};
 
-	NeptuneSchlyterOrbitalEphemeris xSchlyterModel;
 	POSITION_TEST( NeptuneSchlyterOrbitalEphemeris, "Neptune Schlyter", 30.0 );
 
 	return true;

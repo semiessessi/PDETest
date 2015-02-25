@@ -64,6 +64,9 @@
     <Filter Include="PDE\Ephemerides\Venus">
       <UniqueIdentifier>{b678d5ce-8527-4918-bb20-ffba4a2296c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PDE\Ephemerides\Sun">
+      <UniqueIdentifier>{12cf4194-36bf-4bae-b4c9-6cb9a13170c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\Core\EntryPoint.cpp">
@@ -146,6 +149,21 @@
     </ClCompile>
     <ClCompile Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.cpp">
       <Filter>PDE\Ephemerides\Uranus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_EarthPosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\Sun\SunVSOP87Model.cpp">
+      <Filter>PDE\Ephemerides\Sun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PDE\Ephemerides\VSOP87Orbit.cpp">
+      <Filter>PDE\Ephemerides</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_SunPosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Test\Ephemerides\Test_MercuryPosition.cpp">
+      <Filter>PDETest\Test\Ephemerides</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +271,18 @@
     </ClInclude>
     <ClInclude Include="..\..\PDE\Ephemerides\Uranus\UranusVSOP87Model.h">
       <Filter>PDE\Ephemerides\Uranus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_EarthPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Ephemerides\Sun\SunVSOP87Model.h">
+      <Filter>PDE\Ephemerides\Sun</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_SunPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Test\Ephemerides\Test_MercuryPosition.h">
+      <Filter>PDETest\Test\Ephemerides</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

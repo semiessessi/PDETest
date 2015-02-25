@@ -29,7 +29,7 @@
 		    } \
 	    } \
 	    const double dAverageError = dError / static_cast< double >( iTestCaseCount ); \
-	    printf( "Error in " Name " model across test cases was on average %.2f%% (%.4f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError ); \
+	    printf( "Average error in " Name " model = %.2f%% (%.6f AU)\r\n", 100.0  * dAverageError / dApproximateMagnitude, dAverageError ); \
 	}
 
 #endif

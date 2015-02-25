@@ -33,9 +33,8 @@ bool Test_SaturnPosition::Run()
 		{ 9.455339111133359E+00, -1.769524475883949E+00, -3.456974044128207E-01, 2460676.500000000 },
 	};
 
-	SaturnSchlyterOrbitalEphemeris xSchlyterModel;
 	POSITION_TEST( SaturnSchlyterOrbitalEphemeris, "Saturn Schlyter", 9.5 );
-	POSITION_TEST( SaturnVSOP87OrbitalEphemeris, "Saturn VSOP87", 9.5 );
+	POSITION_TEST( SaturnVSOP87DOrbitalEphemeris, "Saturn VSOP87D (truncated)", 9.5 );
 
 	return true;
 }
