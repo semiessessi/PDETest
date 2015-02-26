@@ -3,6 +3,7 @@
 #include "Test_Position.h"
 
 #include "Ephemerides/Neptune/NeptuneSchlyterModel.h"
+#include "Ephemerides/Neptune/NeptuneVSOP87Model.h"
 
 bool Test_NeptunePosition::Run()
 {
@@ -37,6 +38,7 @@ bool Test_NeptunePosition::Run()
 	};
 
 	POSITION_TEST( NeptuneSchlyterOrbitalEphemeris, "Neptune Schlyter", 30.0 );
+    POSITION_TEST( NeptuneVSOP87EOrbitalEphemeris, "Neptune VSOP87E", 30.0 );
 
 	return true;
 }

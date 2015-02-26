@@ -11,7 +11,7 @@
         double dMinError = 1e26; \
         for( int i = 0; i < iTestCaseCount; ++i ) \
 	    { \
-			const EphemerisVector4 xTestPosition = xModel.CalculatePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) ); \
+            const EphemerisVector4 xTestPosition = xModel.CalculateNoLightTimePosition( DPVector4( 0.0, 0.0, 0.0, kaxTestValues[ i ].mdJDT ) ); \
 		    const double dDistance = ( xTestPosition.xyz() \
 		    - EphemerisVector4( kaxTestValues[ i ].mdEclipticX, kaxTestValues[ i ].mdEclipticY, kaxTestValues[ i ].mdEclipticZ ).xyz() ) \
 				.Magnitude(); \

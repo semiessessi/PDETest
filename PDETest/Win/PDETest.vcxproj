@@ -199,6 +199,7 @@
     <ClCompile Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.cpp" />
+    <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Saturn\SaturnVSOP87Model.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Sun\SunVSOP87Model.cpp" />
@@ -233,6 +234,7 @@
     <ClInclude Include="..\..\PDE\Ephemerides\Mars\MarsSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Mercury\MercurySchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Neptune\NeptuneSchlyterModel.h" />
+    <ClInclude Include="..\..\PDE\Ephemerides\Neptune\NeptuneVSOP87Model.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\OrbitalEphemeris.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PeturbedKeplerOrbit.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\PrecessingKeplerOrbit.h" />
