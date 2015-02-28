@@ -168,6 +168,9 @@
     <ClCompile Include="..\..\PDE\Ephemerides\Neptune\NeptuneVSOP87Model.cpp">
       <Filter>PDE\Ephemerides\Neptune</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\PDE\Time\ProfileTimer.cpp">
+      <Filter>PDE\Time</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PDE\Compiler\Compiler.h">
@@ -289,6 +292,9 @@
     </ClInclude>
     <ClInclude Include="..\..\PDE\Ephemerides\Neptune\NeptuneVSOP87Model.h">
       <Filter>PDE\Ephemerides\Neptune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PDE\Time\ProfileTimer.h">
+      <Filter>PDE\Time</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

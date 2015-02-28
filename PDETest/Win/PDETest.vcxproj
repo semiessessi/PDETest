@@ -212,6 +212,7 @@
     <ClCompile Include="..\..\PDE\Image\Image_Save.cpp" />
     <ClCompile Include="..\..\PDE\Maths\Maths.cpp" />
     <ClCompile Include="..\..\PDE\Maths\Vector.cpp" />
+    <ClCompile Include="..\..\PDE\Time\ProfileTimer.cpp" />
     <ClCompile Include="..\Code\Core\EntryPoint.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_EarthPosition.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_JupiterPosition.cpp" />
@@ -254,6 +255,7 @@
     <ClInclude Include="..\..\PDE\Maths\Vector.h" />
     <ClInclude Include="..\..\PDE\Platform\Platform.h" />
     <ClInclude Include="..\..\PDE\Time\J2000.h" />
+    <ClInclude Include="..\..\PDE\Time\ProfileTimer.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_EarthPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_JupiterPosition.h" />
     <ClInclude Include="..\Code\Test\Ephemerides\Test_MercuryPosition.h" />
