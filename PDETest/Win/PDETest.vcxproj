@@ -173,26 +173,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\PDE\Debug\AssertAndroid.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\PDE\Debug\AssertWin.cpp" />
-    <ClCompile Include="..\..\PDE\Debug\TraceAndroid.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\PDE\Debug\TraceStdC.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\PDE\Debug\TraceWin.cpp" />
+    <ClCompile Include="..\..\PDE\Debug\PDEAssertWin.cpp" />
+    <ClCompile Include="..\..\PDE\Debug\PDETraceWin.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.cpp" />
     <ClCompile Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.cpp" />
@@ -210,8 +192,8 @@
     <ClCompile Include="..\..\PDE\Image\Image.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_LoadFromCompressedVoyagerData.cpp" />
     <ClCompile Include="..\..\PDE\Image\Image_Save.cpp" />
-    <ClCompile Include="..\..\PDE\Maths\Maths.cpp" />
-    <ClCompile Include="..\..\PDE\Maths\Vector.cpp" />
+    <ClCompile Include="..\..\PDE\Maths\PDEMaths.cpp" />
+    <ClCompile Include="..\..\PDE\Maths\PDEVector.cpp" />
     <ClCompile Include="..\..\PDE\Time\ProfileTimer.cpp" />
     <ClCompile Include="..\Code\Core\EntryPoint.cpp" />
     <ClCompile Include="..\Code\Test\Ephemerides\Test_EarthPosition.cpp" />
@@ -225,9 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PDE\Compiler\Compiler.h" />
-    <ClInclude Include="..\..\PDE\Debug\Assert.h" />
     <ClInclude Include="..\..\PDE\Debug\Breakpoint.h" />
-    <ClInclude Include="..\..\PDE\Debug\Trace.h" />
+    <ClInclude Include="..\..\PDE\Debug\PDEAssert.h" />
+    <ClInclude Include="..\..\PDE\Debug\PDETrace.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Earth\EarthSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterSchlyterModel.h" />
     <ClInclude Include="..\..\PDE\Ephemerides\Jupiter\JupiterVSOP87Model.h" />
@@ -249,10 +231,10 @@
     <ClInclude Include="..\..\PDE\Hardware\CPU.h" />
     <ClInclude Include="..\..\PDE\Image\Image.h" />
     <ClInclude Include="..\..\PDE\Maths\DPVector.h" />
-    <ClInclude Include="..\..\PDE\Maths\Maths.h" />
-    <ClInclude Include="..\..\PDE\Maths\MathsOperator.h" />
-    <ClInclude Include="..\..\PDE\Maths\Matrix.h" />
-    <ClInclude Include="..\..\PDE\Maths\Vector.h" />
+    <ClInclude Include="..\..\PDE\Maths\PDEMaths.h" />
+    <ClInclude Include="..\..\PDE\Maths\PDEMathsOperator.h" />
+    <ClInclude Include="..\..\PDE\Maths\PDEMatrix.h" />
+    <ClInclude Include="..\..\PDE\Maths\PDEVector.h" />
     <ClInclude Include="..\..\PDE\Platform\Platform.h" />
     <ClInclude Include="..\..\PDE\Time\J2000.h" />
     <ClInclude Include="..\..\PDE\Time\ProfileTimer.h" />
